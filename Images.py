@@ -12,4 +12,4 @@ for filename in os.listdir(directory):
         im = im.rotate(-90)
         im = im.resize((128,128))
         im = im.convert("RGB")
-        im.save(os.path.join(output_directory, filename+".jpeg"))
+        im.save(os.path.join(output_directory, filename),format="JPEG")
